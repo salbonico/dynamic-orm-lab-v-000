@@ -24,8 +24,12 @@ def initialize(attributes = {})
   attributes.each do |property, value|
    self.send("#{property}=",value)
   end
-
 end
+
+def table_name
+self.class.table_name
+end
+
 
 
 
