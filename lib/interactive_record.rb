@@ -55,13 +55,12 @@ DB[:conn].execute(sql)
 end
 
 def self.find_by(attributes)
-
+thing = []
 attributes.each do |property,value|
-  col = property
-  inval = value
+thing << property
 end
 
-binding.pry 
+binding.pry
 sql = "SELECT * FROM #{self.table_name} WHERE name = '#{attributes[:name]}';"
 DB[:conn].execute(sql)
 end
