@@ -35,5 +35,11 @@ output = self.class.column_names.delete_if {|column| column == 'id' }
 output.join(", ")
 end
 
+def values_for_insert
+values =[]
+ col_names_for_insert.each do |col|
+   values << self.send("'#{col}'")
+end
+
 
 end
