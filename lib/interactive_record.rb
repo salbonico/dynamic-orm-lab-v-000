@@ -61,7 +61,7 @@ thing << "#{property}"
 thing << "#{value}"
 end
 
-binding.pry
+
 sql = "SELECT * FROM #{self.table_nam} WHERE #{thing[0]} = '#{thing[1]}';"
 DB[:conn].execute(sql)
 end
