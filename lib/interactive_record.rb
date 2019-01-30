@@ -56,7 +56,7 @@ end
 
 def self.find_by(attributes)
 binding.pry
-sql = "SELECT * FROM #{self.table_name} WHERE name = 'attributes[:name]'"
+sql = "SELECT * FROM #{self.table_name} WHERE name = 'attributes[:name]';"
 end
 
 
