@@ -40,6 +40,6 @@ values =[]
  col_names_for_insert.each do |col|
    values << "'send(col)'") unless send(col).nil?
 end
-
+end
 
 end
