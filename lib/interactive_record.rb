@@ -33,6 +33,7 @@ end
 def col_names_for_insert
 output = self.class.column_names.delete_if {|column| column == 'id' }
 output.join(",")
+output
 end
 
 
