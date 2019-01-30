@@ -54,4 +54,10 @@ sql = "SELECT * FROM #{self.table_name} WHERE name = '#{name}';"
 DB[:conn].execute(sql)
 end
 
+def self.find_by(attributes)
+binding.pry
+sql = "SELECT * FROM #{self.table_name} WHERE '#{attributes[name:]}'"
+
+
+end
 end
