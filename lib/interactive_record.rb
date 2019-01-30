@@ -38,7 +38,7 @@ end
 def values_for_insert
 values =[]
  col_names_for_insert.each do |col|
-   values << "'send(col)'") unless send(col).nil?
+   values << "'send(col)'" unless send(col).nil?
 end
 end
 
