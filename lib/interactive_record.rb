@@ -62,7 +62,7 @@ thing << "#{value}"
 end
 
 
-sql = "SELECT * FROM #{self.table_nam} WHERE #{thing[0]} = '#{thing[1]}';"
+sql = "SELECT * FROM #{self.table_name} WHERE #{thing[0]} = '#{thing[1]}';"
 DB[:conn].execute(sql)
 end
 
