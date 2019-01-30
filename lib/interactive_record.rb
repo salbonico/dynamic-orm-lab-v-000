@@ -56,6 +56,8 @@ end
 
 def self.find_by(attributes)
 
+binding.pry
+
 sql = "SELECT * FROM #{self.table_name} WHERE name = '#{attributes[:name]}';"
 DB[:conn].execute(sql)
 end
