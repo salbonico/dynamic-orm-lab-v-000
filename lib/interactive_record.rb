@@ -58,6 +58,7 @@ def self.find_by(attributes)
 thing = []
 attributes.each do |property,value|
 thing << "#{property}"
+thing << "#{value}"
 end
 
 binding.pry
