@@ -62,7 +62,7 @@ thing << "#{value}"
 end
 
 binding.pry
-sql = "SELECT * FROM #{self.table_name} WHERE name = '#{attributes[:name]}';"
+sql = "SELECT * FROM #{thing[0]} WHERE name = '#{attributes[:name]}';"
 DB[:conn].execute(sql)
 end
 
